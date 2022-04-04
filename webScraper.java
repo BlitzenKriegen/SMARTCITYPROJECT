@@ -15,6 +15,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.ProfilesIni;
 
 /**
  * @author kiril
@@ -38,7 +40,10 @@ public class webScraper {
 
     private static void searchMaps(String tst) {
         System.setProperty(driverName, driverPath);
+        ProfilesIni profilesIni = new ProfilesIni();
+        FirefoxProfile profile = profilesIni.getProfile("AutomatedBrowser");
         FirefoxOptions options = new FirefoxOptions();
+        options.setProfile(profile);
         options.addArguments("--headless");
         WebDriver driver = new FirefoxDriver(options);
         driver.manage().window().maximize();
