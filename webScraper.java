@@ -40,27 +40,17 @@ public class webScraper {
     static int topLeftY = 70;
     static int imgWidth = 400;
     static int imgHeight = 480;
-    /**
-     * This is used as a test driver.
-     */
-    public static void main(String[] args) throws IOException {
-        String tst = "Universities in Calgary";
-        searchMaps(tst);
-
-        System.out.println("Here");
-        return;
-    }
 
     /**
     * The following searches the passed in term and saves the
     * results on google maps as a screenshot to a directory defined
     * at the beginning of the class.
     */
-    private static void searchMaps(String tst) {
-        System.setProperty(driverName, driverPath);
-        ProfilesIni profilesIni = new ProfilesIni();
+    public void searchMaps(String tst) {
+        //System.setProperty(driverName, driverPath);
+        //ProfilesIni profilesIni = new ProfilesIni();
         FirefoxProfile profile = profilesIni.getProfile("AutomatedBrowser");
-        FirefoxOptions options = new FirefoxOptions();
+        //FirefoxOptions options = new FirefoxOptions();
         options.setProfile(profile);
         options.addArguments("--headless");
         WebDriver driver = new FirefoxDriver(options);
