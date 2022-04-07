@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.image">
+   <top>
+      <Pane prefHeight="800.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="display" fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="goBack" layoutX="510.0" layoutY="111.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+          
+         </children></Pane>
+   </top>
+</BorderPane>

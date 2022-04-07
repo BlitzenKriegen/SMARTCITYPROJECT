@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="523.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.afterLogin">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="194.0" layoutY="83.0" text="Select from the buttons below:" />
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="322.0" fitWidth="201.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/smart-city-logo-icon-template-design-illustration-vector.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="517.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="searchUni" layoutX="39.0" layoutY="25.0" mnemonicParsing="false" onAction="#University" text="Universities" />
+            <Button fx:id="searchSchools" layoutX="158.0" layoutY="69.0" mnemonicParsing="false" onAction="#School" text="Schools" />
+            <Button fx:id="searchMuseum" layoutX="151.0" layoutY="25.0" mnemonicParsing="false" onAction="#Museum" text="Museums " />
+            <Button fx:id="logout" layoutX="111.0" layoutY="125.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+            <Button fx:id="searchBusiness" layoutX="41.0" layoutY="69.0" mnemonicParsing="false" onAction="#Business" text="Businesses" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
